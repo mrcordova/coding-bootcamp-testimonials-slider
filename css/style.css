@@ -42,6 +42,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* Desktop */
+  margin-inline: 10.3rem 2.7rem;
 }
 
 .border {
@@ -157,9 +160,12 @@ main {
 }
 
 @media (min-width: 35rem) {
+  body {
+    background: url("../images/pattern-curve.svg") left -11rem bottom -13rem /
+      contain no-repeat;
+  }
   main {
     flex-direction: row-reverse;
-    margin-inline: 10.3rem;
   }
   .testimonial-container {
     flex: 0;
