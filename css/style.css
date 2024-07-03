@@ -66,10 +66,25 @@ main {
   gap: 1rem;
 }
 .slider-buttons {
+  display: flex;
+  /* font-size: 0.1rem; */
   position: absolute;
   bottom: 1rem;
   left: 50%;
+
   transform: translateX(-50%);
+
+  border-radius: 3rem;
+  background-color: white;
+}
+.slider-buttons > button {
+  flex: 1;
+  padding-inline: 1rem;
+  padding-block: 0.7rem;
+}
+.slider-buttons > button > img {
+  object-fit: contain;
+  width: 0.6rem;
 }
 .slider-buttons > button:hover {
   cursor: pointer;
@@ -81,6 +96,7 @@ main {
   line-height: 1.37;
   font-size: 1.1rem;
   width: 27ch;
+  color: var(--Dark-Blue);
   text-align: center;
   background: url("../images/pattern-quotes.svg") no-repeat top center / 3.8rem;
 }
