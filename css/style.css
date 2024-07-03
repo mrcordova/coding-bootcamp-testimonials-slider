@@ -33,6 +33,7 @@ body {
   display: grid;
   font-size: 32px;
   /* place-content: center; */
+  background: url("../images/pattern-curve.svg") no-repeat bottom / contain;
 }
 
 main {
@@ -61,7 +62,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/pattern-curve.svg") no-repeat bottom / contain;
+
+  gap: 1rem;
 }
 .slider-buttons {
   position: absolute;
@@ -81,4 +83,20 @@ main {
   width: 27ch;
   text-align: center;
   background: url("../images/pattern-quotes.svg") no-repeat top center / 3.8rem;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 0.95rem;
+}
+
+.title {
+  font-size: 0.95rem;
+  color: var(--Grayish-Blue);
 }
