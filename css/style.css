@@ -82,7 +82,10 @@ main {
   align-items: center;
 
   text-align: center;
-  gap: 1rem;
+  /* Mobile */
+  /* gap: 1rem; */
+  /* Desktop */
+  gap: 2rem;
 }
 .slider-buttons {
   display: flex;
@@ -124,13 +127,8 @@ main {
   line-height: 1.37;
   font-size: 2rem;
 
-  /* word-break: break-all; */
-  /* overflow-x: visible;
-  white-space: nowrap; */
   z-index: 20;
-  /* white-space: pre; */
-  /* width: 30px; */
-  /* width: 34ch; */
+
   width: 39rem;
 }
 
@@ -139,21 +137,29 @@ main {
   /* text-align: center; */
   display: flex;
   flex-direction: column;
+  /* Desktop */
+  gap: 0.5rem;
 }
 
 .name {
-  font-size: 0.95rem;
+  /* Mobile */
+  /* font-size: 0.95rem; */
+  /* Desktop */
+  font-size: 1.3rem;
 }
 
 .title {
-  font-size: 0.95rem;
+  /* MObile */
+  /* font-size: 0.95rem; */
+  /* Desktop */
+  font-size: 1.25rem;
   color: var(--Grayish-Blue);
 }
 
 @media (min-width: 35rem) {
   main {
     flex-direction: row-reverse;
-    margin-inline: 10.5rem;
+    margin-inline: 10.3rem;
   }
   .testimonial-container {
     flex: 0;
