@@ -32,12 +32,14 @@ body {
   min-height: 100vh;
   display: grid;
   font-size: 32px;
+  place-content: center;
   background: url("../images/pattern-curve.svg") left -3rem bottom -1.5rem /
     contain no-repeat;
 }
 
 main {
   height: 100svh;
+  max-width: 70rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,19 +173,30 @@ main {
   color: var(--Grayish-Blue);
 }
 
+@media (min-width: 55rem) {
+  main {
+    flex-direction: row-reverse;
+  }
+
+  .testimonial-container {
+    flex: 0;
+
+    inline-size: 30rem;
+  }
+  .quote {
+    width: 39rem;
+  }
+}
+
 @media (min-width: 35rem) {
   body {
     background: url("../images/pattern-curve.svg") left -13rem bottom -13rem /
       contain no-repeat;
   }
   main {
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
   }
   .testimonial-container {
-    flex: 0;
-
-    inline-size: 30rem;
-
     text-align: left;
     align-items: flex-start;
   }
@@ -194,7 +207,6 @@ main {
     left: 20%;
   }
   .quote {
-    width: 39rem;
     background: url("../images/pattern-quotes.svg") no-repeat left 6rem top /
       7.5rem;
   }
