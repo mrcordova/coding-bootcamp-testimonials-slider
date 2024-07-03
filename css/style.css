@@ -46,8 +46,6 @@ main {
 
   margin-inline: clamp(0rem, -3.6268rem + 15.4742vw, 10.3rem)
     clamp(0rem, -0.9507rem + 4.0563vw, 2.7rem);
-  /* Desktop */
-  /* margin-inline: 10.3rem 2.7rem; */
 }
 
 .profile {
@@ -71,12 +69,6 @@ main {
     clamp(2.5rem, 0.9155rem + 6.7606vw, 7rem);
   margin-block: clamp(3rem, 2.7535rem + 1.0516vw, 3.7rem)
     clamp(2.4rem, 2.2239rem + 0.7512vw, 2.9rem);
-  /* Mobile */
-  /* margin-inline: 2.5rem; */
-  /* margin-block: 3rem 2.4rem; */
-  /* Desktop */
-  /* margin-inline: 5.5rem 7rem; */
-  /* margin-block: 3.7rem 2.9rem; */
 }
 .testimonial-container {
   flex: 1;
@@ -86,22 +78,14 @@ main {
 
   text-align: center;
   gap: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
-  /* Mobile */
-  /* gap: 1rem; */
-  /* Desktop */
-  /* gap: 2rem; */
 }
 .slider-buttons {
   display: flex;
   position: absolute;
   bottom: clamp(-2rem, -0.6479rem + -1.5023vw, -1rem);
-  /* Mobile */
-  /* bottom: -1rem; */
-  left: 50%;
-  /* transform: translateX(-50%); */
-  /* Desktop */
 
-  /* bottom: -2rem; */
+  left: 50%;
+
   transition: 2s ease;
 
   transform: translateX(-50%);
@@ -113,12 +97,6 @@ main {
   flex: 1;
   padding-inline: clamp(1rem, 0.8415rem + 0.6761vw, 1.45rem);
   padding-block: clamp(0.7rem, 0.4887rem + 0.9014vw, 1.3rem);
-  /* Mobile */
-  /* padding-inline: 1rem; */
-  /* padding-block: 0.7rem; */
-  /* Desktop */
-  /* padding-inline: 1.45rem; */
-  /* padding-block: 1.3rem; */
 }
 .slider-buttons > button > img {
   object-fit: contain;
@@ -133,15 +111,10 @@ main {
   background: url("../images/pattern-quotes.svg") no-repeat top center / 3.8rem;
   padding-block-start: clamp(1.5rem, 0.6197rem + 3.7559vw, 4rem);
   font-size: clamp(1.12rem, 0.8101rem + 1.3221vw, 2rem);
-  /* Mobile */
-  /* padding-block-start: 1.5rem; */
-  /* line-height: 1.37; */
-  /* font-size: 1.12rem; */
+
   width: 29ch;
-  /* Desktop */
-  /* padding-block-start: 4rem; */
+
   line-height: 1.37;
-  /* font-size: 2rem; */
 
   z-index: 20;
 }
@@ -152,27 +125,31 @@ main {
   display: flex;
   flex-direction: column;
   gap: clamp(0rem, -0.1761rem + 0.7512vw, 0.5rem);
-  /* Desktop */
-  /* gap: 0.5rem; */
 }
 
 .name {
   font-size: clamp(0.95rem, 0.8268rem + 0.5258vw, 1.3rem);
-  /* Mobile */
-  /* font-size: 0.95rem; */
-  /* Desktop */
-  /* font-size: 1.3rem; */
 }
 
 .title {
   font-size: clamp(0.95rem, 0.8444rem + 0.4507vw, 1.25rem);
-  /* MObile */
-  /* font-size: 0.95rem; */
-  /* Desktop */
-  /* font-size: 1.25rem; */
+
   color: var(--Grayish-Blue);
 }
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media (min-width: 55rem) {
   main {
     flex-direction: row-reverse;
@@ -193,9 +170,7 @@ main {
     background: url("../images/pattern-curve.svg") left -13rem bottom -13rem /
       contain no-repeat;
   }
-  main {
-    /* flex-direction: row-reverse; */
-  }
+
   .testimonial-container {
     text-align: left;
     align-items: flex-start;
