@@ -33,11 +33,10 @@ body {
   display: grid;
   font-size: 32px;
   /* place-content: center; */
-  background: url("../images/pattern-curve.svg") no-repeat bottom / contain;
 }
 
 main {
-  height: 100%;
+  height: 100svh;
   display: flex;
   flex-direction: column;
 }
@@ -76,7 +75,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  background: url("../images/pattern-curve.svg") left -2rem bottom -1.5rem /
+    contain no-repeat;
   gap: 1rem;
 }
 .slider-buttons {
